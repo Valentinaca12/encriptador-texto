@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1 class="logo-alura"><img src="logo alura.jpeg"></h1>
+            <h2 class="titulo-encriptador">Encriptador de Texto</h2>
+        </div>
+    </header>
+    <main class="main">
+        <section class="campo-encriptar">
+            <textarea id="texto-encriptar" class="campo-texto" oninput="validateInput()" placeholder="Ingresa el texto a encriptar; solo letras minúsculas." style="text-transform: lowercase;"></textarea>
+        </section>
+        <section class="campo-encriptado">
+            <textarea id="texto-encriptado" class="campo-mensaje" style="text-transform: lowercase;"></textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+        <div class="btn">
+            <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>   
+        </div>
+    </main>
+    <footer>
+        <div class="redes">
+            <ul class="redes-sociales">
+                <li><a href="https://www.linkedin.com/in/sara-carmona-46a0482ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="iconos" src="linkedin.jpeg" width="45" height="45"></a></li>
+                <li><a href="https://github.com/Valentinaca12"><img  class="iconos" src="gitHub.jpeg" width="45" height="45"></a></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy Copyright Sara Carmona</p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

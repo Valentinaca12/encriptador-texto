@@ -1,0 +1,130 @@
+/*css para el encabezado*/
+
+header{
+    width: 100%;
+    background:#000000;
+    padding: 20px 0;
+}
+ 
+.caja{
+    position: relative;
+    margin: 0 auto;
+}
+.titulo-encriptador, .logo-alura{
+    display:inline-block;
+}
+   
+.logo-alura{
+    position: relative;
+    margin: 10px;
+}
+
+.titulo-encriptador{
+    text-align:center;
+    position:absolute;
+    margin: 30px 85px;
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Orbitron", sans-serif;
+    color: white;
+}    
+
+/*css para el main, el encriptador*/
+
+.main{
+    width: 100%;
+    background: url(fondo\ encriptador.jpeg);
+}
+
+.campo-encriptar, .campo-encriptado{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+#texto-encriptar, #texto-encriptado{
+    padding: 180px;
+    border-radius: 10px; 
+    border-width: 5px;
+    border-color: blue;
+    border-style:double;
+    background: darkslategrey;
+    font-size: 15px;
+    font-family: "Play", sans-serif;
+    margin: 10px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btnEncriptar, .btnDesencriptar, .copiar{
+    margin: 10px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background: #92C5FC;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s;
+}
+.btnEncriptar:hover, .btnDesencriptar:hover, .copiar:hover{
+    background: blue;
+}
+
+/*css para el pie de pagina*/
+
+footer{
+    background: black;
+}
+
+.copyright, .redes{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: blanchedalmond;
+    font-size: 15px;
+}
+
+.redes-sociales li{
+    display: inline-block;
+    margin: 30px;
+}
+
+.copyright{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:540px){
+    header{
+        width: auto;
+    }
+
+    .titulo-encriptador, .logo-alura{
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .titulo-encriptador{
+        font-size: 15px;
+        position: static;
+        margin: 10px;
+    }
+
+    .logo-alura{
+       position:static;
+    }
+
+    .campo-encriptar, .campo-encriptado{
+       left: 30px;
+    }
+
+    #texto-encriptar, #texto-encriptado{
+        display: inline;
+        padding: 80px 20px;
+        margin: 10px;
+    }    
+}
+
+
